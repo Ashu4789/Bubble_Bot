@@ -11,7 +11,6 @@ const Navbar = () => {
     { name: 'Technology', path: '/#technology', icon: <Cpu size={18} /> },
     { name: 'Team', path: '/team', icon: <User size={18} /> },
     { name: 'Documentation', path: '/documentation', icon: <BookOpen size={18} /> },
-    { name: 'Book Service', path: '/book-service', icon: <Shield size={18} /> },
     { name: 'Contact', path: '/contact', icon: <User size={18} /> },
     { name: 'FAQ', path: '/faq', icon: <HelpCircle size={18} /> },
   ];

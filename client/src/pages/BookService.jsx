@@ -13,8 +13,10 @@ import {
   ChevronLeft,
   Grid,
   Bot,
-  Maximize2
+  Maximize2,
+  X
 } from 'lucide-react';
+import { useEffect } from 'react';
 
 const BookService = () => {
   const [step, setStep] = useState(1);
@@ -25,6 +27,15 @@ const BookService = () => {
     organization: '',
     message: ''
   });
+  const [inspectedImage, setInspectedImage] = useState(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') setInspectedImage(null);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
 
   const nextStep = () => setStep(step + 1);
   const prevStep = () => setStep(step - 1);
@@ -103,6 +114,20 @@ const BookService = () => {
                     <div className="aspect-video relative overflow-hidden">
                       <img src={lake.image} alt={lake.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                       <div className="absolute inset-0 bg-gradient-to-t from-navy-dark via-transparent to-transparent opacity-60"></div>
+                      
+                      {/* Inspection Overlay */}
+                      <div 
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setInspectedImage(lake.image);
+                        }}
+                        className="absolute inset-0 flex items-center justify-center bg-navy-dark/40 opacity-0 group-hover:opacity-100 transition-opacity cursor-zoom-in"
+                      >
+                        <div className="p-4 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-cyan-glow scale-75 group-hover:scale-100 transition-transform">
+                          <Maximize2 size={24} />
+                        </div>
+                      </div>
+
                       <div className="absolute bottom-4 left-6 flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-cyan-glow bg-navy-dark/80 px-3 py-1 rounded-full backdrop-blur-md">
                         <MapPin size={10} /> {lake.location}
                       </div>
@@ -252,7 +277,10 @@ const BookService = () => {
                        Our algorithm has partitioned the {selectedLake.name} into optimized quadrants to prevent overlap and ensure 100% surface recovery.
                      </p>
                      
-                     <div className="flex-grow relative group/map overflow-hidden rounded-2xl border border-white/10">
+                     <div 
+                        className="flex-grow relative group/map overflow-hidden rounded-2xl border border-white/10 cursor-zoom-in"
+                        onClick={() => setInspectedImage(selectedLake.sectionImage)}
+                      >
                         <img 
                           src={selectedLake.sectionImage} 
                           alt="Sectioning Map" 
@@ -288,6 +316,45 @@ const BookService = () => {
                   Close Visualization
                 </button>
               </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* Full Screen Image Viewer */}
+        <AnimatePresence>
+          {inspectedImage && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setInspectedImage(null)}
+              className="fixed inset-0 z-[100] flex items-center justify-center bg-navy-dark/95 backdrop-blur-2xl p-4 md:p-12 cursor-zoom-out"
+            >
+              <motion.button
+                whileHover={{ scale: 1.1, rotate: 90 }}
+                whileTap={{ scale: 0.9 }}
+                className="absolute top-8 right-8 text-white/50 hover:text-cyan-glow transition-colors"
+                onClick={() => setInspectedImage(null)}
+              >
+                <X size={40} />
+              </motion.button>
+
+              <motion.div
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.9, opacity: 0 }}
+                className="relative max-w-7xl max-h-full rounded-3xl overflow-hidden border border-white/10 shadow-[0_0_100px_rgba(0,229,255,0.1)]"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <img 
+                  src={inspectedImage} 
+                  alt="Inspection View" 
+                  className="w-full h-auto max-h-[85vh] object-contain"
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                  <p className="text-cyan-glow font-black italic uppercase tracking-[0.2em] text-[10px]">High-Resolution Analysis View</p>
+                </div>
+              </motion.div>
             </motion.div>
           )}
         </AnimatePresence>
