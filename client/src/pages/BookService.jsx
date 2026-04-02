@@ -12,7 +12,8 @@ import {
   ChevronRight, 
   ChevronLeft,
   Grid,
-  Bot
+  Bot,
+  Maximize2
 } from 'lucide-react';
 
 const BookService = () => {
@@ -251,8 +252,20 @@ const BookService = () => {
                        Our algorithm has partitioned the {selectedLake.name} into optimized quadrants to prevent overlap and ensure 100% surface recovery.
                      </p>
                      
-                     <div className="flex-grow">
-                        {renderSectioning()}
+                     <div className="flex-grow relative group/map overflow-hidden rounded-2xl border border-white/10">
+                        <img 
+                          src={selectedLake.sectionImage} 
+                          alt="Sectioning Map" 
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover/map:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-navy-dark/40 group-hover/map:bg-transparent transition-colors"></div>
+                        
+                        {/* Overlay with instructions */}
+                        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-navy-dark/80 backdrop-blur-md px-4 py-2 rounded-xl border border-white/10 opacity-0 group-hover/map:opacity-100 transition-opacity">
+                          <p className="text-[10px] font-black text-cyan-glow uppercase tracking-widest flex items-center gap-2">
+                             <Maximize2 size={10} /> Inspect Quadrants
+                          </p>
+                        </div>
                      </div>
 
                      <div className="mt-12 flex flex-col gap-4">
