@@ -31,10 +31,10 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <Link 
-              to="/acquire"
+              to="/book-service"
               className="w-full sm:w-auto bg-cyan-glow text-navy-dark font-bold px-8 py-4 rounded-full flex items-center justify-center gap-2 group hover:shadow-[0_0_30px_rgba(0,229,255,0.4)] transition-all duration-300"
             >
-              Acquire Services <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              Book Service <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </Link>
             <button 
               onClick={() => document.getElementById('technology')?.scrollIntoView({ behavior: 'smooth' })}

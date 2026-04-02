@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: 'Technology', path: '/#technology', icon: <Cpu size={18} /> },
     { name: 'Team', path: '/team', icon: <User size={18} /> },
     { name: 'Documentation', path: '/documentation', icon: <BookOpen size={18} /> },
-    { name: 'Acquire', path: '/acquire', icon: <Shield size={18} /> },
+    { name: 'Book Service', path: '/book-service', icon: <Shield size={18} /> },
     { name: 'Contact', path: '/contact', icon: <User size={18} /> },
     { name: 'FAQ', path: '/faq', icon: <HelpCircle size={18} /> },
   ];
@@ -55,10 +55,10 @@ const Navbar = () => {
               </Link>
             ))}
             <Link
-              to="/acquire"
-              className="bg-cyan-glow/10 text-cyan-glow border border-cyan-glow/30 px-6 py-2 rounded-full text-sm font-semibold hover:bg-cyan-glow hover:text-navy-dark transition-all duration-300"
+              to="/book-service"
+              className="bg-cyan-glow text-navy-dark px-6 py-2 rounded-full text-sm font-black italic uppercase tracking-widest hover:shadow-[0_0_20px_rgba(0,229,255,0.4)] transition-all duration-300"
             >
-              Acquire Services
+              Book Service
             </Link>
           </div>
 
@@ -98,11 +98,11 @@ const Navbar = () => {
             </Link>
           ))}
           <Link
-            to="/acquire"
+            to="/book-service"
             onClick={() => setIsOpen(false)}
-            className="block w-full text-center bg-cyan-glow text-navy-dark px-6 py-4 rounded-lg font-bold"
+            className="block w-full text-center bg-cyan-glow text-navy-dark px-6 py-4 rounded-lg font-black italic uppercase tracking-widest"
           >
-            Acquire Services
+            Book Service
           </Link>
         </div>
       </motion.div>

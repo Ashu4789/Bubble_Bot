@@ -7,6 +7,7 @@ import Documentation from './pages/Documentation';
 import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
 import Team from './pages/Team';
+import BookService from './pages/BookService';
 import AdminDashboard from './pages/AdminDashboard';
 import { Toaster } from 'react-hot-toast';
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/team" element={<Team />} />
+            <Route path="/book-service" element={<BookService />} />
             <Route path="/admin" element={<AdminDashboard />} />
           </Routes>
         </main>
