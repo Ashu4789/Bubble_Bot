@@ -9,6 +9,7 @@ import FAQ from './pages/FAQ';
 import Team from './pages/Team';
 import BookService from './pages/BookService';
 import AdminDashboard from './pages/AdminDashboard';
+import ScrollBar from './components/ScrollBar';
 import { Toaster } from 'react-hot-toast';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <ScrollBar />
         <Toaster position="bottom-right" reverseOrder={false} />
       </div>
     </Router>
