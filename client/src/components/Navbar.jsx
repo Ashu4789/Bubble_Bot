@@ -9,6 +9,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Technology', path: '/#technology', icon: <Cpu size={18} /> },
+    { name: 'Team', path: '/team', icon: <User size={18} /> },
     { name: 'Documentation', path: '/documentation', icon: <BookOpen size={18} /> },
     { name: 'Acquire', path: '/acquire', icon: <Shield size={18} /> },
     { name: 'Contact', path: '/contact', icon: <User size={18} /> },
@@ -35,8 +36,8 @@ const Navbar = () => {
             >
               <Droplets className="text-aqua w-8 h-8" />
             </motion.div>
-            <span className="text-2xl font-bold tracking-tighter text-white">
-              PRAYAS<span className="text-cyan-glow">.</span>
+            <span className="text-2xl font-bold tracking-tighter text-white uppercase italic">
+              Bubble_Bot<span className="text-cyan-glow">.</span>
             </span>
           </Link>
 

@@ -5,7 +5,6 @@ import DesignFeatures from '../components/sections/DesignFeatures';
 import Workflow from '../components/sections/Workflow';
 import Engineering from '../components/sections/Engineering';
 import Performance from '../components/sections/Performance';
-import Team from '../components/sections/Team';
 import Future from '../components/sections/Future';
 import { motion } from 'framer-motion';
 
@@ -24,7 +23,6 @@ const Home = () => {
       <Workflow />
       <Engineering />
       <Performance />
-      <Team />
       <Future />
     </motion.div>
   );

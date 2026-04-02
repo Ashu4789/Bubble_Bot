@@ -1,8 +1,8 @@
-# PRAYAS - Autonomous Water Surface Cleaning Robot (Bubble)
+# Bubble_Bot - Autonomous Water Surface Cleaning Robot
 
 **Team ID: SIH123** | **PSID: 1603**
 
-PRAYAS is an advanced robotics solution designed for the autonomous cleanup of water bodies. Leveraging AI and IoT, it identifies and removes trash, oil slicks, and other pollutants with high efficiency and zero human intervention.
+Bubble_Bot is an advanced robotics solution designed for the autonomous cleanup of water bodies. Leveraging AI and IoT, it identifies and removes trash, oil slicks, and other pollutants with high efficiency and zero human intervention.
 
 ## 🚀 Key Features
 
@@ -31,11 +31,8 @@ PRAYAS is an advanced robotics solution designed for the autonomous cleanup of w
 
 ## 👥 Core Team (SIH123)
 - **Sanjog Panda** - Team Lead / Engineering
-- **Daksh Goswami** - Mechanical Design
-- **M. Sameel** - AI & IoT Systems
-- **Surya Prabha** - Hardware & Electronics
-- **Abdul Raheem** - Navigation Algorithms
-- **Aashish Gautam** - Research & Data Analysis
+- **Agnik Ray** - Mechanical Design (Fusion 360)
+- **Aanchal Nishad** - AI & IoT Systems
 
 ## 💻 Setup & Installation
 

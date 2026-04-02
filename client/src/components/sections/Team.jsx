@@ -1,14 +1,26 @@
 import { motion } from 'framer-motion';
-import { User, ExternalLink, Mail, Globe } from 'lucide-react';
+import { User, Mail, Zap, ExternalLink } from 'lucide-react';
 
 const Team = () => {
   const members = [
-    { name: 'Sanjog Panda', role: 'Team Lead / Engineering' },
-    { name: 'Daksh Goswami', role: 'Mechanical Design (Fusion 360)' },
-    { name: 'M. Sameel', role: 'AI & IoT Systems' },
-    { name: 'Surya Prabha', role: 'Hardware & Electronics' },
-    { name: 'Abdul Raheem', role: 'Navigation Algorithms' },
-    { name: 'Aashish Gautam', role: 'Research & Data Analysis' },
+    { 
+      name: 'Sanjog Panda', 
+      role: 'Team Lead / Engineering',
+      email: 'sanjogpanda009@gmail.com',
+      linkedin: 'https://www.linkedin.com/in/sanjog01/'
+    },
+    { 
+      name: 'Agnik Ray', 
+      role: 'Mechanical Design (Fusion 360)',
+      email: 'agnikray01@gmail.com',
+      linkedin: 'https://www.linkedin.com/in/agnikray/'
+    },
+    { 
+      name: 'Aanchal Nishad', 
+      role: 'AI & IoT Systems',
+      email: 'aanchalmitian@gmail.com',
+      linkedin: 'https://www.linkedin.com/in/aanchalnishad07/'
+    }
   ];
 
   return (
@@ -17,7 +29,7 @@ const Team = () => {
         <div className="text-center mb-16">
           <h2 className="text-sm font-bold text-cyan-glow uppercase tracking-[0.2em] mb-4 italic">The Innovators</h2>
           <h3 className="text-4xl md:text-5xl font-black mb-6 italic uppercase tracking-tighter">
-             Core <span className="text-cyan-glow text-shadow-glow">Team</span> (SIH123)
+             Core <span className="text-cyan-glow text-shadow-glow">Team</span>
           </h3>
           <div className="w-24 h-1 bg-cyan-glow mx-auto rounded-full"></div>
         </div>
@@ -44,12 +56,23 @@ const Team = () => {
 
               {/* Decorative elements */}
               <div className="mt-8 pt-8 border-t border-white/5 flex items-center justify-between">
-                <div className="flex gap-4">
-                  <ExternalLink size={18} className="text-slate-500 hover:text-cyan-glow cursor-pointer transition-colors" />
-                  <Globe size={18} className="text-slate-500 hover:text-cyan-glow cursor-pointer transition-colors" />
-                  <Mail size={18} className="text-slate-500 hover:text-cyan-glow cursor-pointer transition-colors" />
+                <div className="flex gap-6">
+                  {member.linkedin && (
+                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-slate-500 hover:text-cyan-glow transition-all duration-300 group/link">
+                      <ExternalLink size={18} className="group-hover/link:scale-110 transition-transform" />
+                      <span className="text-[10px] font-bold uppercase tracking-widest opacity-0 group-hover/link:opacity-100 transition-opacity">LinkedIn</span>
+                    </a>
+                  )}
+                  {member.email && (
+                    <a href={`mailto:${member.email}`} className="flex items-center gap-2 text-slate-500 hover:text-cyan-glow transition-all duration-300 group/link">
+                      <Mail size={18} className="group-hover/link:scale-110 transition-transform" />
+                      <span className="text-[10px] font-bold uppercase tracking-widest opacity-0 group-hover/link:opacity-100 transition-opacity">Email</span>
+                    </a>
+                  )}
                 </div>
-                <div className="text-[10px] text-slate-600 font-bold uppercase tracking-tighter">Team SIH123</div>
+                <div className="text-[10px] text-cyan-glow/40 font-bold uppercase tracking-tighter flex items-center gap-2">
+                  <Zap size={10} /> Core Member
+                </div>
               </div>
 
               <div className="absolute top-0 right-0 w-24 h-24 bg-cyan-glow/5 blur-3xl group-hover:bg-cyan-glow/10 -z-10 transition-colors"></div>

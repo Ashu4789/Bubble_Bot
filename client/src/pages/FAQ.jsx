@@ -48,13 +48,13 @@ const FAQItem = ({ question, answer, icon }) => {
 const FAQ = () => {
   const faqs = [
     { 
-      question: 'What water bodies can PRAYAS operate in?', 
-      answer: 'PRAYAS is designed for semi-closed water bodies such as lakes, rivers, ponds, and industrial reservoirs. The Marine-Grade V2.0 can also operate in coastal areas with high salinity and low-to-moderate wave heights.', 
+      question: 'What water bodies can Bubble_Bot operate in?', 
+      answer: 'Bubble_Bot is designed for semi-closed water bodies such as lakes, rivers, ponds, and industrial reservoirs. The Marine-Grade V2.0 can also operate in coastal areas with high salinity and low-to-moderate wave heights.', 
       icon: <Droplets size={24} /> 
     },
     { 
       question: 'Is the robot fully autonomous?', 
-      answer: 'Yes. PRAYAS uses onboard NVIDIA Xavier processing for edge-computing and obstacle avoidance. It maps its own path using CPP (Coverage Path Planning) algorithms, needing zero human intervention during mission time.', 
+      answer: 'Yes. Bubble_Bot uses onboard NVIDIA Xavier processing for edge-computing and obstacle avoidance. It maps its own path using CPP (Coverage Path Planning) algorithms, needing zero human intervention during mission time.', 
       icon: <Cpu size={24} /> 
     },
     { 

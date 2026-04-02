@@ -52,7 +52,7 @@ const DesignFeatures = () => {
                    Engineered for <br/> <span className="text-cyan-glow underline underline-offset-8 decoration-white/10">Harsh Environments</span>
                 </h3>
                 <p className="text-slate-400 max-w-md ml-auto leading-relaxed italic">
-                    The PRAYAS robot chassis is a masterpiece of maritime engineering. Combining aesthetics 
+                    The Bubble_Bot robot chassis is a masterpiece of maritime engineering. Combining aesthetics 
                     with extreme durability to survive corrosive currents and pollutants.
                 </p>
               </div>

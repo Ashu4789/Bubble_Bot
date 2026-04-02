@@ -11,7 +11,7 @@ const Footer = () => {
             <Link to="/" className="flex items-center space-x-2 mb-6 group">
               <Droplets className="text-aqua w-8 h-8 group-hover:scale-110 transition-transform duration-200" />
               <span className="text-2xl font-bold tracking-tighter text-white">
-                PRAYAS<span className="text-cyan-glow">.</span>
+                Bubble_Bot<span className="text-cyan-glow">.</span>
               </span>
             </Link>
             <p className="text-slate-400 max-w-sm mb-6 leading-relaxed">
@@ -19,16 +19,16 @@ const Footer = () => {
               most vital resource with cutting-edge robotics and intelligent navigation.
             </p>
             <div className="flex space-x-4">
-              <a href="https://github.com/PRAYAS" className="p-2 bg-white/5 rounded-full hover:bg-cyan-glow hover:text-navy-dark transition-all duration-300">
+              <a href="https://github.com/ashu4789/Bubble_Bot" className="p-2 bg-white/5 rounded-full hover:bg-cyan-glow hover:text-navy-dark transition-all duration-300">
                 <Globe size={20} />
               </a>
-              <a href="https://linkedin.com/company/prayas" className="p-2 bg-white/5 rounded-full hover:bg-cyan-glow hover:text-navy-dark transition-all duration-300">
+              <a href="https://linkedin.com/in/ashu4789" className="p-2 bg-white/5 rounded-full hover:bg-cyan-glow hover:text-navy-dark transition-all duration-300">
                 <ExternalLink size={20} />
               </a>
-              <a href="https://twitter.com/prayas_robotics" className="p-2 bg-white/5 rounded-full hover:bg-cyan-glow hover:text-navy-dark transition-all duration-300">
+              <a href="https://twitter.com/ashu4789" className="p-2 bg-white/5 rounded-full hover:bg-cyan-glow hover:text-navy-dark transition-all duration-300">
                 <Globe size={20} />
               </a>
-              <a href="mailto:contact@prayas.ai" className="p-2 bg-white/5 rounded-full hover:bg-cyan-glow hover:text-navy-dark transition-all duration-300">
+              <a href="mailto:contact@bubble_bot.ai" className="p-2 bg-white/5 rounded-full hover:bg-cyan-glow hover:text-navy-dark transition-all duration-300">
                 <Mail size={20} />
               </a>
             </div>
@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
-          <p>© 2024 PRAYAS Robotics. AI Powered Environmental Solutions.</p>
+          <p>© 2024 Bubble_Bot Robotics. AI Powered Environmental Solutions.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-cyan-glow transition-colors duration-200">Privacy Policy</a>
             <a href="#" className="hover:text-cyan-glow transition-colors duration-200">Terms of Service</a>
