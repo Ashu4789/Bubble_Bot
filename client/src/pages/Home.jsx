@@ -2,6 +2,7 @@ import Hero from '../components/sections/Hero';
 import About from '../components/sections/About';
 import Technology from '../components/sections/Technology';
 import DesignFeatures from '../components/sections/DesignFeatures';
+import ModelViewer from '../components/sections/ModelViewer';
 import Workflow from '../components/sections/Workflow';
 import Engineering from '../components/sections/Engineering';
 import Performance from '../components/sections/Performance';
@@ -20,6 +21,7 @@ const Home = () => {
       <About />
       <Technology />
       <DesignFeatures />
+      <ModelViewer />
       <Workflow />
       <Engineering />
       <Performance />
