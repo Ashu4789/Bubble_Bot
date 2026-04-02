@@ -76,9 +76,9 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-bold text-white mb-2 italic uppercase">What is PRAYAS?</h3>
                 <p className="text-slate-400 leading-relaxed text-sm">
-                  PRAYAS is an advanced <span className="text-cyan-glow font-bold">Autonomous Water Surface Cleaning Robot</span> specifically 
-                  engineered to identify and remove trash, oil slicks, and other floating pollutants from 
-                  sensitive water bodies. It leverages high-precision sensors and multi-agent AI algorithms.
+                  PRAYAS is a high-tech <span className="text-cyan-glow font-bold">Autonomous Water Surface Cleaning Robot</span>. 
+                  Developed by Team SIH123, it is designed to automate the removal of floating debris and oil 
+                  from water bodies using advanced Fusion 360 optimized design and generative components.
                 </p>
               </div>
             </div>
@@ -88,11 +88,11 @@ const About = () => {
                 <Droplets className="text-cyan-glow" size={24} />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white mb-2 italic uppercase">Autonomous Navigation</h3>
+                <h3 className="text-xl font-bold text-white mb-2 italic uppercase">AI & IoT Integration</h3>
                 <p className="text-slate-400 leading-relaxed text-sm">
-                  Unlike traditional solutions, PRAYAS operates with <span className="text-white font-bold">zero human intervention</span>. 
-                  It scans the surface using millimeter-wave radar and RGB cameras, planning the most 
-                  efficient coverage path across the water body while avoiding obstacles in real-time.
+                  By leveraging <span className="text-white font-bold">IoT and AI</span>, PRAYAS achieves 
+                  novelty and efficiency. It uses a Coverage Path Planning (CPP) algorithm to ensure 
+                  100% area coverage, making it one of the most effective solutions for aquatic restoration.
                 </p>
               </div>
             </div>
@@ -106,11 +106,11 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white mb-2 italic uppercase">Scalable Deployment</h3>
+                <h3 className="text-xl font-bold text-white mb-2 italic uppercase">Material Excellence</h3>
                 <p className="text-slate-400 leading-relaxed text-sm">
-                  From small lake cleanup to large-scale river conservation projects, PRAYAS can be 
-                  deployed in "swarms" to tackle massive pollution challenges, coordinated through a 
-                  central cloud-based command center.
+                  Built with <span className="text-white font-bold">Marine Grade Aluminum 6061</span> and 
+                  high-density <span className="text-white font-bold">HDPE</span>, PRAYAS is designed for 
+                  longevity in harsh aquatic environments, ensuring durability and sustainable performance.
                 </p>
               </div>
             </div>

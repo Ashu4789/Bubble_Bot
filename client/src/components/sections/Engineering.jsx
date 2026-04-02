@@ -3,10 +3,10 @@ import { Microscope, Activity, Box, Database, TrendingUp, Settings } from 'lucid
 
 const Engineering = () => {
   const simulations = [
-    { name: 'Static Stress Simulation', desc: 'Analyzing structural integrity of the trash basket under heavy loads.', icon: <Box size={24} /> },
-    { name: 'Generative Design', desc: 'Optimization of motor mounts and chassis for maximum weight-to-strength ratio.', icon: <Settings size={24} /> },
-    { name: 'Fluid Flow Simulation', desc: 'Aero/Hydrodynamic analysis to minimize drag and energy consumption.', icon: <TrendingUp size={24} /> },
-    { name: 'Autonomous Pathfinding', desc: 'Multi-agent coordination and sensor fusion simulation.', icon: <Database size={24} /> },
+    { name: 'Static Stress on Trash Basket', desc: 'Analyzing 6061 Aluminum cage structural integrity under load.', icon: <Box size={24} /> },
+    { name: 'Motor Mount Generative Design', desc: 'Weight-to-strength ratio optimization for high-torque propulsion.', icon: <Settings size={24} /> },
+    { name: 'Fluid Path Study', desc: 'Hydrodynamic analysis to minimize drag and optimize surface speed.', icon: <TrendingUp size={24} /> },
+    { name: 'Sensor Fusion Simulation', desc: 'NVIDIA Xavier logic validation with mmWave and RGB camera inputs.', icon: <Database size={24} /> },
   ];
 
   return (

@@ -17,20 +17,20 @@ const Hero = () => {
         >
           <div className="inline-flex items-center space-x-2 bg-cyan-glow/10 border border-cyan-glow/20 px-4 py-2 rounded-full mb-8">
             <span className="flex h-2 w-2 rounded-full bg-cyan-glow animate-pulse"></span>
-            <span className="text-xs font-bold text-cyan-glow uppercase tracking-widest">v2.0 Autonomous Release</span>
+            <span className="text-xs font-bold text-cyan-glow uppercase tracking-widest">Team ID: SIH123 | PSID: 1603</span>
           </div>
           
           <h1 className="text-6xl md:text-8xl font-black leading-tight mb-6 bg-gradient-to-r from-white via-white to-cyan-glow bg-clip-text text-transparent italic">
             PRAYAS
           </h1>
           <h2 className="text-2xl md:text-3xl font-light text-slate-300 mb-8 leading-relaxed">
-            AI Powered Solution for <br className="hidden md:block"/>
-            <span className="text-white font-bold">Water Pollution Control</span>
+            Autonomous Water Surface <br className="hidden md:block"/>
+            <span className="text-white font-bold text-cyan-glow">Cleaning Robot (Bubble)</span>
           </h2>
           
           <p className="text-lg text-slate-400 mb-10 max-w-lg leading-relaxed">
-            Revolutionizing environmental conservation through intelligent navigation 
-            and automated waste collection. Designed for lakes, rivers, and smart cities.
+            Integrating AI and IoT for a cleaner future. A high-efficiency robotic solution 
+            designed to restore the purity of our water bodies with zero human intervention.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4">

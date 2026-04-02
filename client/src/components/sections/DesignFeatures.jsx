@@ -3,12 +3,12 @@ import { Layers, Shield, Anchor, Wind, Trash2, Droplets } from 'lucide-react';
 
 const DesignFeatures = () => {
   const features = [
-    { title: 'Lightweight Floating Body', desc: 'Optimized for buoyancy and stability in various water types.', icon: <Wind size={24} /> },
-    { title: 'Marine Grade Aluminum', desc: 'Corrosion-resistant trash cage built for long-term oceanic deployment.', icon: <Shield size={24} /> },
-    { title: 'Oil Absorbing Mechanism', desc: 'Modular filters that trap and collect floating oil slicks.', icon: <Droplets size={24} /> },
-    { title: 'Autonomous Navigation', desc: 'Seamless movement without manual supervision.', icon: <Anchor size={24} /> },
-    { title: 'Environmental Sensing', desc: 'Onboard sensors measure water quality during cleanup.', icon: <Layers size={24} /> },
-    { title: 'Debris Collection', desc: 'Heavy-duty basket for plastic and floating waste.', icon: <Trash2 size={24} /> },
+    { title: 'HDPE Floating Body', desc: '5-15kg lightweight hull optimized for buoyancy and stability.', icon: <Wind size={24} /> },
+    { title: 'Aluminum 6061 Cage', desc: '15kg marine-grade corrosion-resistant trash cage.', icon: <Shield size={24} /> },
+    { title: 'Oil Collector', desc: '2mm Polyurethane foam sheets for efficient surface oil absorption.', icon: <Droplets size={24} /> },
+    { title: 'Autonomous Navigation', desc: 'Seamless movement without manual supervision using CPP algorithm.', icon: <Anchor size={24} /> },
+    { title: 'Propulsion Cage', desc: '3-5kg plastic propulsion housing with high-efficiency motors.', icon: <Layers size={24} /> },
+    { title: 'Debris Collection', desc: 'Heavy-duty basket designed for plastic and floating waste.', icon: <Trash2 size={24} /> },
   ];
 
   return (

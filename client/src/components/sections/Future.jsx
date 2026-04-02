@@ -3,10 +3,10 @@ import { Layers, Zap, TrendingDown, Activity, Globe, Cpu } from 'lucide-react';
 
 const Future = () => {
   const roadmap = [
-    { title: 'Advanced Sensors', desc: 'Integration of heavy metal and nitrate detection for water quality analytics.', icon: <Layers size={24} /> },
-    { title: 'Larger Capacity', desc: 'Autonomous "Mega-Barge" edition for industrial ports and open seas.', icon: <Zap size={24} /> },
-    { title: 'Lower Mfg Cost', desc: 'Optimizing production to make cleanup affordable for NGOs and local governments.', icon: <TrendingDown size={24} /> },
-    { title: 'AI Analytics', desc: 'Predictive pollution flow modeling based on seasonal currents and data history.', icon: <Activity size={32} className="text-white" /> },
+    { title: 'Advanced Pollution Sensors', desc: 'Integration of heavy metal and nitrate detection for water quality analytics.', icon: <Layers size={24} /> },
+    { title: 'Enhanced Capacity', desc: 'Scaling the central trash cage to 50kg+ for industrial port cleanup.', icon: <Zap size={24} /> },
+    { title: 'Cost Reduction', desc: 'Optimizing production and materials to make PRAYAS affordable for local municipalities.', icon: <TrendingDown size={24} /> },
+    { title: 'Technical Advancements', desc: 'Swarm robotics coordination and solar-augmented endurance batteries.', icon: <Activity size={32} className="text-white" /> },
   ];
 
   return (

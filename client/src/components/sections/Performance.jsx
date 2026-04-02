@@ -3,10 +3,10 @@ import { Ship, Cpu, Battery, Search, Activity, Zap } from 'lucide-react';
 
 const Performance = () => {
   const cards = [
-    { title: 'Harsh Conditions', desc: 'Capable of operating in high currents, salinity, and turbulence.', icon: <Ship size={32} /> },
-    { title: 'Autonomous Navigation', desc: 'Self-governing system with real-time dynamic obstacle avoidance.', icon: <Cpu size={32} /> },
-    { title: 'Pollution Detection', desc: 'Precision sensors identify oil, plastics, and harmful algae.', icon: <Search size={32} /> },
-    { title: 'Continuous Cleaning', desc: 'Extended mission times thanks to solar-integrated energy systems.', icon: <Activity size={32} /> },
+    { title: 'Harsh Conditions', desc: 'Efficient in high currents, salinity, and turbulence (Marine Grade 6061 Aluminum).', icon: <Ship size={32} /> },
+    { title: 'Autonomous Navigation', desc: 'Self-governing system with Coverage Path Planning (CPP) algorithm.', icon: <Cpu size={32} /> },
+    { title: 'Realtime Mapping', desc: 'NVIDIA Xavier processing for realtime area mapping and waste identification.', icon: <Search size={32} /> },
+    { title: '3H Action', desc: '3 hours of continuous autonomous cleaning action per charge.', icon: <Activity size={32} /> },
   ];
 
   return (
@@ -18,8 +18,8 @@ const Performance = () => {
              High <span className="text-cyan-glow">Performance</span> Metrics
           </h3>
           <p className="text-slate-400 text-lg leading-relaxed italic max-w-2xl mx-auto">
-             Efficiency redefined. Our underwater and surface benchmarks show 
-             unmatched reliability in autonomous mission critical tasks.
+             Efficiency redefined. Our surface benchmarks show 
+             unmatched reliability in autonomous aquatic restoration tasks.
           </p>
         </div>
 
@@ -49,18 +49,18 @@ const Performance = () => {
         <div className="mt-20 bg-slate-950 border border-white/5 rounded-3xl p-12 relative overflow-hidden">
            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center items-center">
               <div>
-                 <h4 className="text-cyan-glow font-black text-6xl italic leading-none mb-2">95%</h4>
+                 <h4 className="text-cyan-glow font-black text-6xl italic leading-none mb-2">99%</h4>
                  <p className="text-slate-400 text-xs font-bold uppercase tracking-widest">Trash Recovery Rate</p>
               </div>
               <div className="relative">
                  <div className="w-px h-24 bg-white/10 mx-auto hidden md:block absolute -left-1/2 top-0"></div>
-                 <h4 className="text-white font-black text-6xl italic leading-none mb-2">24h</h4>
-                 <p className="text-slate-400 text-xs font-bold uppercase tracking-widest">Continuous Operation</p>
+                 <h4 className="text-white font-black text-6xl italic leading-none mb-2">3H</h4>
+                 <p className="text-slate-400 text-xs font-bold uppercase tracking-widest">Continuous Action</p>
                  <div className="w-px h-24 bg-white/10 mx-auto hidden md:block absolute -right-1/2 top-0"></div>
               </div>
               <div>
-                 <h4 className="text-cyan-glow font-black text-6xl italic leading-none mb-2">0.5s</h4>
-                 <p className="text-slate-400 text-xs font-bold uppercase tracking-widest">Obstacle Resp. Time</p>
+                 <h4 className="text-cyan-glow font-black text-6xl italic leading-none mb-2">RT</h4>
+                 <p className="text-slate-400 text-xs font-bold uppercase tracking-widest">Realtime Processing</p>
               </div>
            </div>
            

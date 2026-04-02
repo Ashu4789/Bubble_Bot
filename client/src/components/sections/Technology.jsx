@@ -7,6 +7,7 @@ const Technology = () => {
     { name: 'RCB GNSS', desc: 'Real-time high-precision satellite positioning (GPS).', icon: <Compass size={24} /> },
     { name: 'mmWave Radar', desc: 'Accurate obstacle detection in harsh weather.', icon: <Radio size={24} /> },
     { name: 'RGB Camera', desc: 'AI visual recognition for waste identification.', icon: <Camera size={24} /> },
+    { name: 'ESP32', desc: 'Low-power microcontroller for modular task coordination.', icon: <Cpu size={24} /> },
   ];
 
   return (
@@ -29,7 +30,7 @@ const Technology = () => {
               </h3>
               <p className="text-slate-400 mb-8 leading-relaxed">
                  PRAYAS is built on a heavy-duty processing foundation. Leveraging 
-                 onboard edge computing to process massive sensor data in real-time.
+                 onboard edge computing and the NVIDIA Xavier NX platform.
               </p>
               
               <div className="bg-slate-900 border border-cyan-glow/20 p-8 rounded-3xl group hover:border-cyan-glow transition-all duration-500">
@@ -38,7 +39,7 @@ const Technology = () => {
                   <h4 className="text-white font-bold text-xl lowercase italic tracking-tighter">nvidia xavier nx</h4>
                 </div>
                 <p className="text-slate-400 text-sm leading-relaxed mb-6">
-                    Delivering up to 21 TOPS for AI-based visual processing and path optimization.
+                    Processing 21 TOPS for high-speed AI object detection and autonomous navigation.
                 </p>
                 <div className="flex flex-wrap gap-2">
                    <span className="px-3 py-1 bg-white/5 rounded-full text-[10px] text-cyan-glow border border-white/10 uppercase tracking-tighter font-bold">21 TOPS Performance</span>
@@ -49,7 +50,7 @@ const Technology = () => {
           </div>
 
           <div className="lg:w-2/3">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
               {sensors.map((sensor, index) => (
                 <motion.div
                   key={sensor.name}
@@ -57,13 +58,13 @@ const Technology = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-all duration-300 group shadow-xl"
+                  className="bg-white/5 border border-white/10 p-6 rounded-3xl hover:bg-white/10 transition-all duration-300 group shadow-xl"
                 >
-                  <div className="p-4 bg-navy-dark rounded-2xl mb-6 w-fit text-cyan-glow group-hover:bg-cyan-glow group-hover:text-navy-dark transition-all duration-300 shadow-inner">
+                  <div className="p-3 bg-navy-dark rounded-xl mb-4 w-fit text-cyan-glow group-hover:bg-cyan-glow group-hover:text-navy-dark transition-all duration-300">
                     {sensor.icon}
                   </div>
-                  <h4 className="text-xl font-bold text-white mb-3 italic tracking-tight uppercase">{sensor.name}</h4>
-                  <p className="text-slate-400 text-sm leading-relaxed">{sensor.desc}</p>
+                  <h4 className="text-lg font-bold text-white mb-2 italic tracking-tight uppercase">{sensor.name}</h4>
+                  <p className="text-slate-400 text-[10px] leading-relaxed uppercase">{sensor.desc}</p>
                 </motion.div>
               ))}
             </div>
