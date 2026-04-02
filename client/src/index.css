@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-dark: #020617;
+  --color-navy: #0a192f;
+  --color-aqua: #00ffff;
+  --color-cyan-glow: #00e5ff;
+  --color-deep-blue: #0f172a;
+}
+
+:root {
+  background-color: var(--color-navy-dark);
+  color: white;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-navy-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-cyan-glow);
+}
+
+/* Water Wave Animation Effect */
+.water-bg {
+  position: relative;
+  background: linear-gradient(180deg, #020617 0%, #0f172a 100%);
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url('https://www.transparenttextures.com/patterns/wave-cut.png');
+  opacity: 0.1;
+  animation: waveMove 10s linear infinite;
+}
+
+@keyframes waveMove {
+  from { background-position-x: 0; }
+  to { background-position-x: 1000px; }
+}
+
+.glow-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.glow-card:hover {
+  border-color: var(--color-cyan-glow);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+  transform: translateY(-5px);
+}
