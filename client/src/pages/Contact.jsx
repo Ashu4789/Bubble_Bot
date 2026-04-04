@@ -46,7 +46,7 @@ const Contact = () => {
                   Contact <span className="text-cyan-glow">Developer</span>
                </h1>
                <p className="text-slate-400 text-lg leading-relaxed italic max-w-lg">
-                  Have a technical question about the Bubble_Bot algorithm or hardware? 
+                   Have a technical question about the Bubble algorithm or hardware? 
                   Reach out directly for research queries or collaboration.
                </p>
             </div>
@@ -58,7 +58,7 @@ const Contact = () => {
                   </div>
                   <div>
                      <p className="text-slate-500 text-[10px] uppercase tracking-[0.2em] font-black mb-1">Direct Email</p>
-                     <p className="text-white font-bold text-lg italic tracking-widest lowercase">dev@bubble_bot.ai</p>
+                     <p className="text-white font-bold text-lg italic tracking-widest lowercase">dev@bubble.ai</p>
                   </div>
                </div>
 

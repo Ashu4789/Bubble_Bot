@@ -4,7 +4,7 @@ export const LAKES = [
     name: 'Nainital Lake',
     location: 'Nainital, Uttarakhand',
     area: 0.49,
-    bots: 10,
+    bots: 4,
     time: 21,
     coordinates: '29.3919° N, 79.4542° E',
     image: '/lakes/image1.png',

@@ -36,7 +36,7 @@ const Navbar = () => {
               <Droplets className="text-aqua w-8 h-8" />
             </motion.div>
             <span className="text-2xl font-bold tracking-tighter text-white uppercase italic">
-              Bubble_Bot<span className="text-cyan-glow">.</span>
+              Bubble<span className="text-cyan-glow">.</span>
             </span>
           </Link>
 

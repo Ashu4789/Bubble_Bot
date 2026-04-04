@@ -17,7 +17,7 @@ const Hero = () => {
         >
           
           <h1 className="text-6xl md:text-8xl font-black leading-tight mb-6 bg-gradient-to-r from-white via-white to-cyan-glow bg-clip-text text-transparent italic">
-            Bubble_Bot
+            Bubble
           </h1>
           <h2 className="text-2xl md:text-3xl font-light text-slate-300 mb-8 leading-relaxed">
             Autonomous Water Surface <br className="hidden md:block"/>
@@ -60,7 +60,7 @@ const Hero = () => {
             <div className="absolute -inset-10 bg-cyan-glow/20 blur-[100px] -z-10 rounded-full"></div>
             <img 
                src="/bubblebot-hero.png" 
-              alt="Bubble_Bot" 
+              alt="Bubble" 
               className="w-full h-auto drop-shadow-[0_0_50px_rgba(0,229,255,0.3)] rounded-2xl"
             />
           </motion.div>

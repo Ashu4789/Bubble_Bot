@@ -15,7 +15,7 @@ const Team = () => {
             </motion.h1>
             <div className="w-16 h-1 bg-cyan-glow mx-auto rounded-full"></div>
             <p className="mt-8 text-slate-400 text-lg italic max-w-2xl mx-auto">
-              Meet the visionaries, engineers, and designers behind Bubble_Bot. 
+              Meet the visionaries, engineers, and designers behind Bubble. 
               Dedicated to restoring the purity of our water bodies through innovation.
             </p>
         </header>

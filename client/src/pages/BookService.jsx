@@ -246,7 +246,7 @@ const BookService = () => {
                       <div className="p-4 bg-cyan-glow/10 text-cyan-glow rounded-2xl"><Zap size={32} /></div>
                       <div>
                         <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Resource Allocation</p>
-                        <p className="text-3xl font-black text-white italic uppercase tracking-tight">{selectedLake.bots} BUBBLE_BOTS</p>
+                        <p className="text-3xl font-black text-white italic uppercase tracking-tight">{selectedLake.bots} BUBBLES</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-6 p-6 bg-navy-dark rounded-3xl border border-white/5">
@@ -260,7 +260,7 @@ const BookService = () => {
                   
                   <div className="p-8 bg-cyan-glow text-navy-dark rounded-[2.5rem] text-center">
                     <h4 className="font-black italic uppercase tracking-widest mb-2">Lead Analyst Assigned</h4>
-                    <p className="text-navy-dark/70 italic text-sm">We've received your request, {formData.name}. A technical specialist from Bubble_Bot will reach out to <strong>{formData.email}</strong> shortly to finalize the deployment strategy.</p>
+                    <p className="text-navy-dark/70 italic text-sm">We've received your request, {formData.name}. A technical specialist from Bubble will reach out to <strong>{formData.email}</strong> shortly to finalize the deployment strategy.</p>
                   </div>
                 </div>
 

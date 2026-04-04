@@ -29,7 +29,7 @@ const Engineering = () => {
                  Simulation Data
               </h3>
               <p className="text-slate-400 text-lg leading-relaxed italic max-w-lg mb-8">
-                 Bubble_Bot is the result of continuous iterations. Every component is 
+                 Bubble is the result of continuous iterations. Every component is 
                  rigorously tested in simulated environments before physical prototyping.
               </p>
 

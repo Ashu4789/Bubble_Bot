@@ -32,7 +32,7 @@ const ModelViewer = () => {
           </motion.h3>
           <div className="w-24 h-1 bg-cyan-glow mx-auto rounded-full mb-8"></div>
           <p className="text-slate-400 max-w-2xl mx-auto italic text-lg leading-relaxed">
-            Explore the intricate mechanical design and sensor placement of Bubble_Bot 
+            Explore the intricate mechanical design and sensor placement of Bubble 
             in real-time. Use your mouse to rotate, zoom, and inspect the CAD details.
           </p>
         </div>

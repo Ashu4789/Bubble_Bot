@@ -46,13 +46,13 @@ const About = () => {
             </div>
             <div className="space-y-4 pt-12">
                <div className="rounded-2xl overflow-hidden border border-cyan-glow/20 h-48 shadow-[0_0_20px_rgba(0,229,255,0.1)]">
-                <img src="/robot-concept.png" alt="Bubble_Bot Solution" className="w-full h-full object-cover" />
+                <img src="/robot-concept.png" alt="Bubble Solution" className="w-full h-full object-cover" />
               </div>
               <div className="bg-cyan-glow/10 border border-cyan-glow/20 p-6 rounded-2xl relative overflow-hidden">
                 <CheckCircle2 className="text-cyan-glow mb-4" size={32} />
                 <h4 className="text-white font-bold mb-2 uppercase text-sm tracking-widest">Solution</h4>
                 <p className="text-slate-300 text-xs leading-relaxed">
-                  Bubble_Bot: Our autonomous robotics system designed for continuous surface cleaning.
+                  Bubble: Our autonomous robotics system designed for continuous surface cleaning.
                 </p>
                 <div className="absolute -bottom-4 -right-4 text-cyan-glow/10 rotate-12">
                   <CheckCircle2 size={80} />
@@ -74,9 +74,9 @@ const About = () => {
                 <Target className="text-cyan-glow" size={24} />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white mb-2 italic uppercase">What is Bubble_Bot?</h3>
+                <h3 className="text-xl font-bold text-white mb-2 italic uppercase">What is Bubble?</h3>
                 <p className="text-slate-400 leading-relaxed text-sm">
-                  Bubble_Bot is a high-tech <span className="text-cyan-glow font-bold">Autonomous Water Surface Cleaning Robot</span>. 
+                  Bubble is a high-tech <span className="text-cyan-glow font-bold">Autonomous Water Surface Cleaning Robot</span>. 
                   Developed by Team SIH123, it is designed to automate the removal of floating debris and oil 
                   from water bodies using advanced Fusion 360 optimized design and generative components.
                 </p>
@@ -90,7 +90,7 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-bold text-white mb-2 italic uppercase">AI & IoT Integration</h3>
                 <p className="text-slate-400 leading-relaxed text-sm">
-                  By leveraging <span className="text-white font-bold">IoT and AI</span>, Bubble_Bot achieves 
+                  By leveraging <span className="text-white font-bold">IoT and AI</span>, Bubble achieves 
                   novelty and efficiency. It uses a Coverage Path Planning (CPP) algorithm to ensure 
                   100% area coverage, making it one of the most effective solutions for aquatic restoration.
                 </p>
@@ -109,7 +109,7 @@ const About = () => {
                 <h3 className="text-xl font-bold text-white mb-2 italic uppercase">Material Excellence</h3>
                 <p className="text-slate-400 leading-relaxed text-sm">
                   Built with <span className="text-white font-bold">Marine Grade Aluminum 6061</span> and 
-                  high-density <span className="text-white font-bold">HDPE</span>, Bubble_Bot is designed for 
+                  high-density <span className="text-white font-bold">HDPE</span>, Bubble is designed for 
                   longevity in harsh aquatic environments, ensuring durability and sustainable performance.
                 </p>
               </div>

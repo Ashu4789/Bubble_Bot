@@ -5,7 +5,7 @@ const Future = () => {
   const roadmap = [
     { title: 'Advanced Pollution Sensors', desc: 'Integration of heavy metal and nitrate detection for water quality analytics.', icon: <Layers size={24} /> },
     { title: 'Enhanced Capacity', desc: 'Scaling the central trash cage to 50kg+ for industrial port cleanup.', icon: <Zap size={24} /> },
-    { title: 'Cost Reduction', desc: 'Optimizing production and materials to make Bubble_Bot affordable for local municipalities.', icon: <TrendingDown size={24} /> },
+    { title: 'Cost Reduction', desc: 'Optimizing production and materials to make Bubble affordable for local municipalities.', icon: <TrendingDown size={24} /> },
     { title: 'Technical Advancements', desc: 'Swarm robotics coordination and solar-augmented endurance batteries.', icon: <Activity size={32} className="text-white" /> },
   ];
 
@@ -27,7 +27,7 @@ const Future = () => {
                  Next Generation <span className="text-white">Eco-Robotics</span>
               </h3>
               <p className="text-slate-400 text-lg leading-relaxed italic max-w-lg mb-8">
-                 Bubble_Bot is only the beginning. Our vision is to map and clean 100% of the world's 
+                 Bubble is only the beginning. Our vision is to map and clean 100% of the world's 
                  polluted freshwater sources by 2030.
               </p>
               

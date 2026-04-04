@@ -29,7 +29,7 @@ const Technology = () => {
                  AI + IoT <span className="text-cyan-glow">Integration</span>
               </h3>
               <p className="text-slate-400 mb-8 leading-relaxed">
-                 Bubble_Bot is built on a heavy-duty processing foundation. Leveraging 
+                 Bubble is built on a heavy-duty processing foundation. Leveraging 
                  onboard edge computing and the NVIDIA Xavier NX platform.
               </p>
               

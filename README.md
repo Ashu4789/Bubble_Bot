@@ -1,8 +1,8 @@
-# Bubble_Bot - Autonomous Water Surface Cleaning Robot
+# Bubble - Autonomous Water Surface Cleaning Robot
 
 **Team ID: SIH123** | **PSID: 1603**
 
-Bubble_Bot is an advanced robotics solution designed for the autonomous cleanup of water bodies. Leveraging AI and IoT, it identifies and removes trash, oil slicks, and other pollutants with high efficiency and zero human intervention.
+Bubble is an advanced robotics solution designed for the autonomous cleanup of water bodies. Leveraging AI and IoT, it identifies and removes trash, oil slicks, and other pollutants with high efficiency and zero human intervention.
 
 ## 🚀 Key Features
 
