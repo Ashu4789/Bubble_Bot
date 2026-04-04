@@ -4,6 +4,7 @@ import { Shield, Building2, Globe2, Mail, Phone, MessageSquare, Send, CheckCircl
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
+
 const Acquire = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -29,12 +30,24 @@ const Acquire = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    
+    // Using Web3Forms for frontend-only service inquiries
+    const formObject = {
+      ...formData,
+      access_key: import.meta.env.VITE_WEB3FORM_API, // User should replace this with their actual key
+      subject: `Service Inquiry: ${formData.service} from ${formData.organization}`
+    };
+
     try {
-      await axios.post('http://localhost:5000/api/service-request', formData);
-      toast.success('Request sent successfully!');
-      setSubmitted(true);
+      const response = await axios.post('https://api.web3forms.com/submit', formObject);
+      if (response.data.success) {
+        toast.success('Inquiry submitted safely!');
+        setSubmitted(true);
+      } else {
+        toast.error('Inquiry failed. Please verify your access key.');
+      }
     } catch (error) {
-      toast.error('Failed to send request. Is the backend running?');
+       toast.error('Error connecting to the submission service.');
     } finally {
       setLoading(false);
     }

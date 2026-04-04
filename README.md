@@ -50,19 +50,6 @@ Bubble is an advanced robotics solution designed for the autonomous cleanup of w
    npm run dev
    ```
 
-### Server (Backend)
-1. Navigate to the `server` directory:
-   ```bash
-   cd server
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the server:
-   ```bash
-   npm start
-   ```
 
 ---
 *Developed for the Smart India Hackathon (SIH).*

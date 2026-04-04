@@ -8,7 +8,6 @@ import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
 import Team from './pages/Team';
 import BookService from './pages/BookService';
-import AdminDashboard from './pages/AdminDashboard';
 import ScrollBar from './components/ScrollBar';
 import { Toaster } from 'react-hot-toast';
 
@@ -26,7 +25,6 @@ function App() {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/team" element={<Team />} />
             <Route path="/book-service" element={<BookService />} />
-            <Route path="/admin" element={<AdminDashboard />} />
           </Routes>
         </main>
         <Footer />

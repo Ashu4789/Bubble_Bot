@@ -52,7 +52,6 @@ const Footer = () => {
               <li><Link to="/contact" className="text-slate-400 hover:text-cyan-glow transition-colors duration-200 text-sm">Contact Developer</Link></li>
               <li><Link to="/acquire" className="text-slate-400 hover:text-cyan-glow transition-colors duration-200 text-sm">Acquire Services</Link></li>
               <li><Link to="/faq" className="text-slate-400 hover:text-cyan-glow transition-colors duration-200 text-sm">Support & FAQ</Link></li>
-              <li><Link to="/admin" className="text-slate-400 hover:text-cyan-glow transition-colors duration-200 text-sm">Admin Access</Link></li>
             </ul>
           </div>
         </div>

@@ -17,12 +17,24 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    
+    // Using Web3Forms for frontend-only form handling
+    const formObject = {
+      ...formData,
+      access_key: import.meta.env.VITE_WEB3FORM_API, // User should replace this with their actual key
+      subject: `New Contact from ${formData.name}: ${formData.subject}`
+    };
+
     try {
-      await axios.post('http://localhost:5000/api/contact', formData);
-      toast.success('Message sent! I will get back to you soon.');
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      const response = await axios.post('https://api.web3forms.com/submit', formObject);
+      if (response.data.success) {
+        toast.success('Message transmitted successfully!');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        toast.error('Submission failed. Please check your access key.');
+      }
     } catch (error) {
-      toast.error('Failed to send message. Is the backend running?');
+      toast.error('Error connecting to the submission service.');
     } finally {
       setLoading(false);
     }
@@ -58,7 +70,7 @@ const Contact = () => {
                   </div>
                   <div>
                      <p className="text-slate-500 text-[10px] uppercase tracking-[0.2em] font-black mb-1">Direct Email</p>
-                     <p className="text-white font-bold text-lg italic tracking-widest lowercase">dev@bubble.ai</p>
+                     <p className="text-white font-bold text-lg italic tracking-widest lowercase">sanjogpanda009@gmail.com</p>
                   </div>
                </div>
 
@@ -78,7 +90,7 @@ const Contact = () => {
                   </div>
                   <div>
                      <p className="text-slate-500 text-[10px] uppercase tracking-[0.2em] font-black mb-1">Career Network</p>
-                     <p className="text-white font-bold text-lg italic tracking-widest lowercase">linkedin.com/in/ashu4789</p>
+                     <p className="text-white font-bold text-lg italic tracking-widest lowercase">https://www.linkedin.com/in/sanjog01/</p>
                   </div>
                </div>
             </div>
@@ -105,7 +117,7 @@ const Contact = () => {
                   <input 
                     required name="name" type="text" value={formData.name} onChange={handleChange}
                     className="w-full bg-navy-dark/50 border border-white/10 rounded-2xl pl-14 pr-6 py-4 text-white focus:border-cyan-glow outline-none transition-all"
-                    placeholder="Jane Doe"
+                    placeholder="name"
                   />
                 </div>
               </div>
@@ -117,7 +129,7 @@ const Contact = () => {
                   <input 
                     required name="email" type="email" value={formData.email} onChange={handleChange}
                     className="w-full bg-navy-dark/50 border border-white/10 rounded-2xl pl-14 pr-6 py-4 text-white focus:border-cyan-glow outline-none transition-all"
-                    placeholder="jane@organization.com"
+                    placeholder="email-address"
                   />
                 </div>
               </div>
