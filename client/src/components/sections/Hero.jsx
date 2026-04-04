@@ -59,7 +59,7 @@ const Hero = () => {
           >
             <div className="absolute -inset-10 bg-cyan-glow/20 blur-[100px] -z-10 rounded-full"></div>
             <img 
-               src="/bubblebot-hero.png" 
+               src="/1sr gen img (1).png" 
               alt="Bubble" 
               className="w-full h-auto drop-shadow-[0_0_50px_rgba(0,229,255,0.3)] rounded-2xl"
             />
