@@ -49,7 +49,7 @@ const Hero = () => {
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="relative"
+          className="relative group"
         >
           {/* Floating Robot Image */}
           <motion.div
@@ -66,7 +66,7 @@ const Hero = () => {
           </motion.div>
 
           {/* Stats Overlay */}
-          <div className="absolute -bottom-10 -right-5 md:right-10 bg-slate-900/40 backdrop-blur-xl border border-white/10 p-6 rounded-2xl z-20">
+          <div className="absolute -bottom-10 -right-5 md:right-10 bg-slate-900/40 backdrop-blur-xl border border-white/10 p-6 rounded-2xl z-20 opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:translate-y-[-10px]">
             <div className="flex items-center gap-4">
               <div className="p-3 bg-cyan-glow/20 rounded-lg">
                 <Play className="text-cyan-glow fill-cyan-glow" size={24} />
